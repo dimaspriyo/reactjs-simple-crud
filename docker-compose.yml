@@ -1,0 +1,31 @@
+version: '3'
+services:
+  database:
+    build: ./database
+    environment:
+      MYSQL_DATABASE: 'reactjs-crud-page'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'root'
+    networks:
+      - reactjs-crud-page_default
+    ports: 
+      - "3002:3306"
+  backend:
+    build: ./backend
+    command: node /app/index.js
+    networks:
+      - reactjs-crud-page_default
+    ports: 
+      - "3001:3001"
+  frontend:
+    build: ./frontend
+    command: npm start
+    ports: 
+      - "3000:3000"
+    networks:
+      - reactjs-crud-page_default
+    tty: true
+networks:
+  reactjs-crud-page_default:
+    driver: bridge

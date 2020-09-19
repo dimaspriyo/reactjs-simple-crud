@@ -1,0 +1,60 @@
+{
+  "name": "reactjs-crud-page",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "css-loader": "^3.6.0",
+    "datatables.net": "^1.10.21",
+    "datatables.net-bs4": "^1.10.21",
+    "datatables.net-dt": "^1.10.21",
+    "datatables.net-jqui": "^1.10.21",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^10.1.0",
+    "gridjs": "^1.11.0",
+    "gridjs-react": "^1.11.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-table": "^7.5.0",
+    "react-toastify": "^6.0.8",
+    "styled-components": "^5.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:local": "REACT_APP_BACKEND=localhost:3001 react-scripts start",
+    "start:docker": "REACT_APP_BACKEND=backend_svc react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "style-loader": "^1.2.1"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/dimaspriyo/reactjs-crud-page.git",
+  "author": "dimaspriyo <dimspriyo@gmail.com>",
+  "license": "MIT"
+}
